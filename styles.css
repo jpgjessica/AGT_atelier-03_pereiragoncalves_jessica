@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow-light-webfont.woff") format("woff"),
+        url("../fonts/barlow-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow-lightitalic-webfont.woff") format("woff"),
+        url("../fonts/barlow-lightitalic-webfont.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.woff") format("woff"),
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplay-Italic-VariableFont_wght.woff") format("woff2");
+    font-style: italic;
+}
+
+h1,
+h3 {
+    font-family: "Playfair";
+}
+
+h2 {
+    font-family: "Playfair";
+    font-style: italic;
+}
+
+body {
+    max-width: 1000px;
+    font: 1.5rem;
+    margin: 30px auto;
+    background-color: #ddd;
+    font-family: "Barlow";
+}
+
+.colonne {
+    columns: 2 250px;
+    column-rule: solid 1px black;
+    column-fill: balance;
+}
+
+blockquote,
+.colonne p:first-child {
+    margin-top: 0;
+}
+
+.colonne h1,
+h2,
+h3 {
+    column-span: all;
+    text-align: center;
+}
+
+p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+}
